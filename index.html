@@ -72,7 +72,7 @@
         <h2 class="index-content-title">Фотогалерея</h2>
         <div class="gallery">
           <figure class="gallery-content">
-            <img class="gallery-content-img" src="img/photo-1.jpg" width="286" height="164" alt="">
+            <img class="gallery-content-img" src="http://placehold.it/286x164" alt="gallery-photo">
           </figure>
           <button class="btn gallery-prev" type="button">Назад</button>
           <button class="btn gallery-next" type="button">Вперёд</button>
@@ -94,11 +94,11 @@
       <div class="index-content-right">
         <h2 class="index-content-title">Записаться</h2>
         <p class="index-content-caption">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="appintment-form-field" type="text" name="date" value="" placeholder="Дата">
-          <input class="appintment-form-field" type="text" name="time" value="" placeholder="Время">
-          <input class="appintment-form-field" type="text" name="name" value="" placeholder="Ваше имя">
-          <input class="appintment-form-field" type="tel" name="phone" value="" placeholder="Телефон">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="field-form-input" type="text" name="date" value="" placeholder="Дата">
+          <input class="field-form-input" type="text" name="time" value="" placeholder="Время">
+          <input class="field-form-input" type="text" name="name" value="" placeholder="Ваше имя">
+          <input class="field-form-input" type="tel" name="phone" value="" placeholder="Телефон">
           <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -113,9 +113,11 @@
       </section>
       <section class="footer-social">
         <p class="footer-caption">Давайте дружить!</p>
-        <a  class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <div class="social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
       </section>
       <section class="footer-copyright">
         <p class="footer-caption">Разработано:</p>
