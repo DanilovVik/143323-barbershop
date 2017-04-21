@@ -1,23 +1,138 @@
 body {
+  min-width: 960px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: #fff;
+  background: #000 url("/img/barbershop-index.jpg") no-repeat center;
 }
 
-.index-content-title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 42px;
-  font-weight: 700;
-  color: #000000;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.page-title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 30px;
-  line-height: 42px;
-  font-weight: 700;
-  color: #000000;
+.inner-page {
+  color: #000;
+  background: #f8f5f2 url("/img/bg-content-block.png") repeat;
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  color: #fff;
+  background-color: #000;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+}
+
+.main-navigation-item {
+  display: inline-block;
+}
+
+.logo-inner {
+  display: block;
+  float: left;
+  width: 111px;
+  height: 24px;
+  padding-top: 22px;
+}
+
+.user-block{
+  float: right;
+  width: 140px;
+}
+
+.page-heading {
+  margin-bottom: 60px;
+  background-color: chocolate;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+.content-column-left {
+  float: left;
+  width: 175px;
+  background-color: aqua
+}
+
+.content-column-right {
+  float: right;
+  width: 700px;
+  margin-bottom: 45px;
+  background-color: aquamarine
+}
+
+.catalog-card {
+  float: left;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: blueviolet;
+}
+
+.catalog-card:nth-child(3),
+.catalog-card:nth-child(6) {
+  margin-right: 0;
+}
+
+.pagination {
+  margin-left: 240px;
+  background-color: coral
+}
+
+.item-column-left {
+  float: left;
+  width: 460px;
+  background-color: darkblue;
+}
+
+.small-photo {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.small-photo:last-child {
+  margin-right: 0;
+}
+
+.item-column-right {
+  float: right;
+  width: 400px;
+  background-color: cyan
+}
+
+.main-footer {
+  margin-top: 50px;
+  color: #fff;
+  background: #000;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 180px;
 }
