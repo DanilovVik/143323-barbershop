@@ -1,11 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-width: 960px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
-  background: #000 url("/img/barbershop-index.jpg") no-repeat center;
+  background: #000 url("../img/barbershop-index.jpg") no-repeat center top;
 }
 
 .clearfix::after {
@@ -16,10 +23,13 @@ body {
 
 .inner-page {
   color: #000;
-  background: #f8f5f2 url("/img/bg-content-block.png") repeat;
+  background: #f8f5f2 url("../img/bg-content-block.png") repeat;
+}
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
 
-.container{
+.container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
@@ -36,8 +46,29 @@ body {
   width: 780px;
 }
 
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
 .main-navigation-item {
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation-link {
+  display: block;
+  padding: 25px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navigation-link:hover {
+  background-color: #242424;
 }
 
 .logo-inner {
@@ -45,34 +76,154 @@ body {
   float: left;
   width: 111px;
   height: 24px;
-  padding-top: 22px;
+  padding-top: 25px;
 }
 
-.user-block{
+.user-block {
   float: right;
   width: 140px;
 }
 
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -20px -10px;
+  opacity: 0.3;
+}
+
+.login:hover::after {
+  opacity: 1;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.index-logo-img {
+  width: 368px;
+  height: 204px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.features-name {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  padding-bottom: 35px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.features-item-caption {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  min-height: 330px;
+  color: #000;
+  background: url("../img/content-block-center.png") no-repeat center, url("../img/bg-content-block.png");
+}
+
+.index-content-information {
+  float: left;
+  width: 380px;
+}
+
+.index-content-about {
+  float: right;
+  width: 300px;
+}
+
 .page-heading {
   margin-bottom: 60px;
-  background-color: chocolate;
 }
 
 .breadcrumbs-item {
   display: inline-block;
 }
 
-.content-column-left {
-  float: left;
-  width: 175px;
-  background-color: aqua
+.big-heading {
+  padding-top: 60px;
+  padding-bottom: 75px;
 }
 
-.content-column-right {
+.price-columns {
+  margin-bottom: 60px;
+}
+
+.price-column-about {
+  float: left;
+  width: 390px;
+}
+
+.price-column-beside {
+  float: right;
+  width: 460px;
+}
+
+.content-column-forme {
+  float: left;
+  width: 175px;
+}
+
+.content-column-description {
   float: right;
   width: 700px;
   margin-bottom: 45px;
-  background-color: aquamarine
 }
 
 .catalog-card {
@@ -80,23 +231,21 @@ body {
   width: 220px;
   margin-bottom: 20px;
   margin-right: 20px;
-  background-color: blueviolet;
 }
 
-.catalog-card:nth-child(3),
-.catalog-card:nth-child(6) {
+.catalog-card:nth-child(3n) {
   margin-right: 0;
 }
 
-.pagination {
-  margin-left: 240px;
-  background-color: coral
+.pagination{
+  float: left;
+  margin-top: 45px;
+  width: 190px;
 }
 
-.item-column-left {
+.item-column-passage {
   float: left;
   width: 460px;
-  background-color: darkblue;
 }
 
 .small-photo {
@@ -109,16 +258,17 @@ body {
   margin-right: 0;
 }
 
-.item-column-right {
+.item-column-declaration {
   float: right;
   width: 400px;
-  background-color: cyan
 }
 
 .main-footer {
-  margin-top: 50px;
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: #fff;
-  background: #000;
+  background: #252525 url("../img/pattern-footer.png");
 }
 
 .footer-contacts {
@@ -127,12 +277,26 @@ body {
   margin-right: 60px;
 }
 
+.footer-link {
+  color: #fff;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
 .footer-social {
   float: left;
   width: 180px;
+  text-align: center;
 }
 
 .footer-copyright {
-    float: right;
-    width: 180px;
+  float: right;
+  width: 180px;
+}
+
+.footer-caption {
+  margin: 0;
+  margin-bottom: 12px;
 }
