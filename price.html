@@ -6,7 +6,7 @@
   <title>HTML Academy: Барбершоп</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-dist-dist.css">
 </head>
 
 <body class="inner-page">
@@ -25,8 +25,8 @@
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Новости</a>
           </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="price.html">Прайс-лист</a>
+          <li class="main-navigation-item active">
+            <a class="main-navigation-link">Прайс-лист</a>
           </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="catalog.html">Магазин</a>
@@ -56,7 +56,7 @@
     </div>
     <div class="price-content clearfix">
       <div class="about">
-        <h2 class="about-text">Мы используем только лучшие средства:</h2>
+        <h2 class="about-text">Мы используем только<br /> лучшие средства:</h2>
         <ul class="about-list">
           <li class="about-item">Baxter of California</li>
           <li class="about-item">MR Natty</li>
@@ -65,7 +65,7 @@
         </ul>
       </div>
       <div class="beside">
-        <h2 class="about-text">Цены на услуги наших мастеров:</h2>
+        <h2 class="beside-text">Цены на услуги<br /> наших мастеров:</h2>
         <table class="table">
           <tr class="table-row">
             <td class="table-cell">Стрижка</td>
@@ -83,8 +83,8 @@
       </div>
     </div>
     <div class="price-content clearfix">
+      <h2 class="about-text">Несколько слов о нас:</h2>
       <div class="about">
-        <h2 class="about-text">Несколько слов о нас:</h2>
         <p class="short-text">
           Наша парикмахерская занимается исключительно мужскими стрижками.Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа.Мы не работаем на количество,мы делаем качество.
         </p>
@@ -96,12 +96,11 @@
       </div>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer inner-page-footer">
     <div class="container clearfix">
       <section class="footer-contacts">
-        <p class="footer-caption">БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,УЛ. Б. КОНЮШЕННАЯ,Д. 19/8<br>
-          <a class="footer-link" href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66
-        </p>
+        БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,УЛ. Б. КОНЮШЕННАЯ,Д. 19/8<br>
+        <a class="footer-link" href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66
       </section>
       <section class="footer-social">
         <p class="footer-caption">Давайте дружить!</p>
@@ -117,6 +116,23 @@
       </section>
     </div>
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="buttton" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p class="modal-content-text">Введите свой логин и пароль:</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="icon-user" type="text" name="login" placeholder="Логин" />
+      <input class="icon-password" type="password" name="password" placeholder="Пароль" />
+      <label class="login-checkbox">
+        <input class="login-checkbox-input" type="checkbox" name="remember" />
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл пароль</a>
+      <button class="btn login-form-btn" type="submit">Войти</button>
+    </form>
+  </div>
+  <script src="js/nerds-dist-dist.js"></script>
 </body>
 
 </html>
